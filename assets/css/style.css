@@ -58,3 +58,11 @@ h1, h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* Background hero image */
+#hero-image{
+    height: 600px;
+    width: 70%;
+    background: url(../images/easyparenting.png) no-repeat center center;
+    top: 100px;
+}
