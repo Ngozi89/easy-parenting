@@ -1,68 +1,35 @@
 /* Import Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+/* Set wildcard selector to override default styles added by the browser */
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     border: none;
 }
 
-
+/* Style the body */
 body {
-    font-family: 'Lota', sans-serif;
-    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic style */
     color: #3a3a3a;
-}
 
-/* Stlye the Logo/header */
-h1, h2 {
-    font-family: Oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 
 }
 
-#logo {
-    float: left;
-    font-size: 280%;
+header {
+    background-color: rgb(77, 160, 10);
 }
 
-/* Style navigation link */
-#menu {
-    font-size: 110%;
-    letter-spacing: 2px;
+main {
+    background-color: aqua;
+    /* Push footer down */
+    flex: 1 0 auto;
 }
 
-#menu #logo {
-    line-height: 75px;
-}
-
-#menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-/* Style the decentant link of the menu */
-#menu a {
-    text-decoration: none;
-    color: inherit;
-}
-/* Style menu to underline when hovered over */
-#menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
-
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-/* Background hero image */
-#hero-image{
-    height: 600px;
-    width: 70%;
-    background: url(../images/easyparenting.png) no-repeat center center;
-    top: 100px;
+footer {
+    background-color: blueviolet;
 }
