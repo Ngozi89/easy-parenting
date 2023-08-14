@@ -21,18 +21,53 @@ body {
 
 header {
     background-color: #fff;
-    margin: 10px;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 3px 3px #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 
-h1,
-h2 {
+header a {
+    color: inherit;
+}
+
+h1 {
     font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 
+/* Menu */
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+/* Taget the menu list */
+#menu li {
+    margin-bottom: 1rem;
+}
+
+/* To make users know where they are in the page */
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Style Navbar with dropdown toggle to take element outside the page structure */
+nav {
+    position: absolute;
+    /*Make background color and width same as the header */
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+
+/* Main content */
 main {
     background-color: aqua;
     /* Push footer down */
