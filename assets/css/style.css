@@ -27,3 +27,34 @@ h1, h2 {
     float: left;
     font-size: 280%;
 }
+
+/* Style navigation link */
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+}
+
+#menu #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+/* Style the decentant link of the menu */
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Style menu to underline when hovered over */
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
